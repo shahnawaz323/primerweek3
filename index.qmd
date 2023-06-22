@@ -1,5 +1,5 @@
 ---
-title: "primerweek3"
+title: "Primer week 3 tutorial"
 author: 'Shah Nawaz'
 ---
 
@@ -8,5 +8,29 @@ This is a Quarto website.
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
 ```{r}
-1 + 1
+library(tidyverse)
+library(ggthemes)
+```
+
+```{r}
+#| echo: false
+#| output: false
+
+
+mtcars %>% select(wt, mpg) %>% ggplot(.)+aes(wt,mpg)+
+geom_point()+geom_smooth(method='lm', formula = y~x, se=F)+theme_clean()+
+labs(title = 'relationship between mpg and weight of the car',
+x='weight (1000s of lbs)',y='miles per gallon', subtitle = 'With the increase in weight the fuel consumption increases')
+
+```
+
+```{r}
+#| echo: false
+#| label: car-plot
+
+
+mtcars %>% select(wt, mpg) %>% ggplot(.)+aes(wt,mpg)+
+geom_point()+geom_smooth(method='lm', formula = y~x, se=F)+theme_clean()+
+labs(title = 'relationship between mpg and weight of the car',
+x='weight (1000s of lbs)',y='miles per gallon', subtitle = 'With the increase in weight the fuel consumption increases')
 ```
