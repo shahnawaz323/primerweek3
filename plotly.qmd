@@ -1,15 +1,17 @@
 ---
 title: "Chick Weight"
+format: html
 ---
 
-```{r echo=FALSE}
+```{r}
 #| message: false
 #| warning: false
+#| echo: false
 library(plotly)
 library(tidyverse)
 
 chick_plot <- ggplot(data = ChickWeight, mapping = aes(weight,Diet,text=weight))+
   geom_point(alpha=0.5)
 
-ggplotly(chick_plot, tooltip = "text")
+ggplotly(chick_plot)
 ```
