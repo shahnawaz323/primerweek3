@@ -11,16 +11,24 @@ website:
         text: About
       - sidebar:sources
       - sidebar:interactive
-      
-sidebar:
-  - id: sources
-    title: "Sources"
-    style: "docked"
-    background: "#ffffff"
-    collapse-level: 2
-    contents:
-      source-1.qmd
-      source-2.qmd
+        -id: sources
+          title: "Sources"
+          style: "docked"
+          background: "#ffffff"
+          collapse-level: 2
+          contents:
+            source-1.qmd
+            source-2.qmd
+        -id: interactive
+         title: "Interactive Pages"
+         style: "floating"
+         background: "#ffffff"
+         collapse-level: 3
+         contents:
+         - plane-passengers.qmd
+         - map-london.qmd
+         - plotly.qmd
+
 
 format:
   html:

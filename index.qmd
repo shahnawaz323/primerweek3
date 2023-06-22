@@ -11,6 +11,7 @@ To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 #| include: false
 library(tidyverse)
 library(ggthemes)
+library(knitr)
 ```
 
 ```{r}
@@ -29,9 +30,13 @@ x='weight (1000s of lbs)',y='miles per gallon', subtitle = 'With the increase in
 #| echo: false
 #| label: car-plot
 
+my_plot <- read_rds(file = "car-plot.rds")
 
-mtcars %>% select(wt, mpg) %>% ggplot(.)+aes(wt,mpg)+
-geom_point()+geom_smooth(method='lm', formula = y~x, se=F)+theme_clean()+
-labs(title = 'relationship between mpg and weight of the car',
-x='weight (1000s of lbs)',y='miles per gallon', subtitle = 'With the increase in weight the fuel consumption increases')
+ggsave('car-plot.png',my_plot)
+```
+
+```{r}
+# car weight vs miles per gallon plot
+include_graphics("images/car-plot.png")
+
 ```
