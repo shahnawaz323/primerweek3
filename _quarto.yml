@@ -15,7 +15,7 @@ website:
 sidebar:
   - id: sources
     title: "Sources"
-    style: "floating"
+    style: "docked"
     background: "#ffffff"
     collapse-level: 2
     contents:
