@@ -4,13 +4,20 @@
     "href": "index.html",
     "title": "Primer week 3 tutorial",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\nlibrary(tidyverse)\n\n── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──\n✔ dplyr     1.1.2     ✔ readr     2.1.4\n✔ forcats   1.0.0     ✔ stringr   1.5.0\n✔ ggplot2   3.4.2     ✔ tibble    3.2.1\n✔ lubridate 1.9.2     ✔ tidyr     1.3.0\n✔ purrr     1.0.1     \n── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──\n✖ dplyr::filter() masks stats::filter()\n✖ dplyr::lag()    masks stats::lag()\nℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors\n\nlibrary(ggthemes)"
+    "text": "To learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "My name is Shah Nawaz, a PhD researcher in the field of geomechanics from Universite Grenoble alpes, passionate about R programming and hiking."
+  },
+  {
+    "objectID": "about.html#about-the-project",
+    "href": "about.html#about-the-project",
+    "title": "About",
+    "section": "About the Project",
+    "text": "About the Project\nThis project is a part of the statistic class I am attending with the Dr. Kane data science course.\n\nGoals\n\nUnderstanding of the quarto website. Complications may include\n\nversion control on git.\n\nOptions with the markdown and code chunks inside qmd files.\n\n“This is data science”   ~Preceptor\nKane’s Free Data Science Bootcamp"
   }
 ]
